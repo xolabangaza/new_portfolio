@@ -233,13 +233,13 @@
     font-style: italic;
   }
   
-  /* Pseudo elements - generated content */
+  
   .home__Quote p:first-child::before {
     content: "\275D";
     margin: 0 5px 0 -40px;
   }
   
-  /* Pseudo elements - generated content */
+  
   .home__Quote p:first-child::after {
     content: "\275E";
     margin: 0 -40px 0 5px;
@@ -257,7 +257,7 @@
     row-gap: 1rem;
   }
   
-  /* Text effects - writing mode */
+  
   .vertical-text {
     display: none;
     writing-mode: vertical-lr;
@@ -274,14 +274,14 @@
     color: var(--first-color-lighter);
   }
   
-  /* Borders*/
+  
   .home__Profile-pic {
     border-radius: 50%;
     width: 40vw;
     border: 4px solid var(--first-color-alt);
   }
   
-  /* Animation */
+  
   .blob {
     position: absolute;
     top: 0;
@@ -292,7 +292,7 @@
     animation: move 10s ease-in-out infinite;
     transform-origin: 50% 50%;
   }
-  /* Animation */
+  
   @keyframes move {
     0% {
       transform: scale(1) translate(10px, -30px);
@@ -342,7 +342,7 @@
     transition: 0.3s;
   }
   
-  /* Transforms */
+  
   .home__scroll-button:hover {
     transform: translateY(0.25rem);
   }
@@ -362,7 +362,7 @@
     font-size: 1.25rem;
   }
   
-  /*==================== BUTTONS ====================*/
+  
   .button {
     display: inline-block;
     background-color: var(--first-color);
@@ -412,4 +412,191 @@
     color: var(--first-color-alt);
   }
   
+
+  img[alt~="CodingMan"] {
+    width: 200px;
+    border-radius: 0.5rem;
+    justify-self: center;
+    align-items: center;
+  }
+  
+  .about__description {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+  
+  
+  .about__container p:first-of-type::first-letter {
+    position: relative;
+    font-size: 1.5rem;
+    line-height: 1;
+    color: var(--first-color);
+    font-weight: bold;
+  }
+  
+  .about__info {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+  }
+  
+  .about__info-title {
+    font-size: var(--h2-font-size);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+  }
+  
+  .about__info-name {
+    font-size: var(--smaller-font-size);
+  }
+  
+  
+  div.about__info-data > span {
+    background-color: var(--first-color-lighter);
+    border-radius: 4px;
+    width: 90px;
+    padding: 3px;
+    margin: 2px;
+  }
+  
+  .about__info-title,
+  .about__info-name {
+    display: block;
+    text-align: center;
+  }
+  
+  .about__buttons {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .skills__container {
+    row-gap: 0;
+  }
+  
+  .skills__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    cursor: pointer;
+  }
+  
+  .skills__icon,
+  .skills__arrow {
+    font-size: 2rem;
+    color: var(--first-color);
+  }
+  
+  .skills__icon {
+    margin-right: 12px;
+  }
+  
+  .skills__title {
+    font-size: var(--h3-font-size);
+  }
+  
+  .skills__subtitle {
+    font-size: var(--small-font-size);
+    color: var(--text-color-light);
+  }
+  
+  .skills__arrow {
+    margin-left: auto;
+    transition: 0.4s;
+  }
+  
+  .skills__list {
+    row-gap: 1.5rem;
+    padding-left: 2.7rem;
+  }
+  
+  .skills__titles {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+  }
+  
+  .skills__name {
+    font-size: var(--normal-font-size);
+    font-weight: 500;
+  }
+  
+  .skills__bar,
+  .skills__percentage {
+    height: 5px;
+    border-radius: 0.25rem;
+  }
+  
+ 
+  .skills__data:nth-child(even) .skills__percentage {
+    background-color: greenyellow;
+  }
+  
+  .skills__percentage {
+    display: block;
+    background-color: var(--first-color);
+  }
+  
+  .skills__html {
+    width: 90%;
+  }
+  
+  .skills__css {
+    width: 80%;
+  }
+  
+  .skills__js {
+    width: 70%;
+  }
+  
+  .skills__wordpress {
+    width: 70%;
+  }
+  
+  .skills__python {
+    width: 60%;
+  }
+  
+  .skills__tab {
+    width: 70%;
+  }
+  
+  .skills__sql {
+    width: 70%;
+  }
+  
+  .skills__google {
+    width: 80%;
+  }
+  
+  .skills__java {
+    width: 80%;
+  }
+  
+  .skills__react {
+    width: 70%;
+  }
+  
+  .skills__py {
+    width: 80%;
+  }
+  
+  .skills__flutter {
+    width: 50%;
+  }
+  
+  .skills__close .skills__list {
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .skills__open .skills__list {
+    height: max-content;
+    margin-bottom: 40px;
+  }
+  
+  
+  .skills__open .skills__arrow {
+    transform: rotate(-180deg);
+  }
   
